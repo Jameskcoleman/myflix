@@ -31,19 +31,19 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 10 Aug 2014 18:49:54 GMT
+      - Sun, 10 Aug 2014 21:18:57 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
       - '596'
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Methods:
-      - GET, POST, HEAD, OPTIONS, DELETE
-      Access-Control-Max-Age:
-      - '300'
       Cache-Control:
       - no-cache, no-store
+      Access-Control-Max-Age:
+      - '300'
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
       Stripe-Version:
       - '2014-08-04'
       Strict-Transport-Security:
@@ -52,14 +52,14 @@ http_interactions:
       encoding: UTF-8
       string: |
         {
-          "id": "tok_14Q1OA4YbhcI9p1LxUmWvjpg",
+          "id": "tok_14Q3iO4YbhcI9p1LgIeRR0Bv",
           "livemode": false,
-          "created": 1407696594,
+          "created": 1407705536,
           "used": false,
           "object": "token",
           "type": "card",
           "card": {
-            "id": "card_14Q1OA4YbhcI9p1LkkNAOuF3",
+            "id": "card_14Q3iO4YbhcI9p1LQ5eYPFDK",
             "object": "card",
             "last4": "0002",
             "brand": "Visa",
@@ -79,13 +79,13 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Sun, 10 Aug 2014 18:49:54 GMT
+  recorded_at: Sun, 10 Aug 2014 21:18:57 GMT
 - request:
     method: post
     uri: https://api.stripe.com/v1/charges
     body:
       encoding: US-ASCII
-      string: amount=999&currency=usd&card=tok_14Q1OA4YbhcI9p1LxUmWvjpg&description=an%20invalid%20charge
+      string: amount=999&currency=usd&card=tok_14Q3iO4YbhcI9p1LgIeRR0Bv&description=an%20invalid%20charge
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -111,7 +111,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 10 Aug 2014 18:49:55 GMT
+      - Sun, 10 Aug 2014 21:18:57 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
@@ -136,9 +136,9 @@ http_interactions:
             "message": "Your card was declined.",
             "type": "card_error",
             "code": "card_declined",
-            "charge": "ch_14Q1OB4YbhcI9p1Lh673IRKi"
+            "charge": "ch_14Q3iP4YbhcI9p1LqoQ8MDwB"
           }
         }
     http_version: 
-  recorded_at: Sun, 10 Aug 2014 18:49:55 GMT
+  recorded_at: Sun, 10 Aug 2014 21:18:58 GMT
 recorded_with: VCR 2.9.2
