@@ -3,7 +3,7 @@
  namespace :deploy do
    desc 'Deploy app in staging environment'
    task :staging do
-     deployment = Paratrooper::Deploy.new("myflix-2896-staging", tag: 'staging')
+     deployment = Paratrooper::Deploy.new("myflix-staging-9-18", tag: 'staging')
 
      deployment.deploy
    end
