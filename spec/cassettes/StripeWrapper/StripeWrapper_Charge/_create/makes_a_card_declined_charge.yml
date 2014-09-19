@@ -31,19 +31,19 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 07 Aug 2014 21:54:14 GMT
+      - Sun, 10 Aug 2014 21:18:51 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
       - '596'
-      Cache-Control:
-      - no-cache, no-store
       Access-Control-Allow-Credentials:
       - 'true'
       Access-Control-Allow-Methods:
       - GET, POST, HEAD, OPTIONS, DELETE
       Access-Control-Max-Age:
       - '300'
+      Cache-Control:
+      - no-cache, no-store
       Stripe-Version:
       - '2014-08-04'
       Strict-Transport-Security:
@@ -52,14 +52,14 @@ http_interactions:
       encoding: UTF-8
       string: |
         {
-          "id": "tok_14Oypu4YbhcI9p1LlNakSS3O",
+          "id": "tok_14Q3iI4YbhcI9p1LzwCdhRYf",
           "livemode": false,
-          "created": 1407448454,
+          "created": 1407705530,
           "used": false,
           "object": "token",
           "type": "card",
           "card": {
-            "id": "card_14Oypu4YbhcI9p1L9gQyhDDp",
+            "id": "card_14Q3iI4YbhcI9p1LMdpXpA4U",
             "object": "card",
             "last4": "0002",
             "brand": "Visa",
@@ -79,13 +79,13 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Thu, 07 Aug 2014 21:54:14 GMT
+  recorded_at: Sun, 10 Aug 2014 21:18:51 GMT
 - request:
     method: post
     uri: https://api.stripe.com/v1/charges
     body:
       encoding: US-ASCII
-      string: amount=999&currency=usd&card=tok_14Oypu4YbhcI9p1LlNakSS3O&description=an%20invalid%20charge
+      string: amount=999&currency=usd&card=tok_14Q3iI4YbhcI9p1LzwCdhRYf&description=an%20invalid%20charge
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -111,19 +111,19 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 07 Aug 2014 21:54:15 GMT
+      - Sun, 10 Aug 2014 21:18:52 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
       - '162'
-      Stripe-Version:
-      - '2014-08-04'
-      Access-Control-Allow-Methods:
-      - GET, POST, HEAD, OPTIONS, DELETE
-      Access-Control-Allow-Credentials:
-      - 'true'
       Cache-Control:
       - no-cache, no-store
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS, DELETE
+      Stripe-Version:
+      - '2014-08-04'
       Access-Control-Max-Age:
       - '300'
       Strict-Transport-Security:
@@ -136,9 +136,9 @@ http_interactions:
             "message": "Your card was declined.",
             "type": "card_error",
             "code": "card_declined",
-            "charge": "ch_14Oypv4YbhcI9p1Lbr9ODmfW"
+            "charge": "ch_14Q3iK4YbhcI9p1LadYPGcQ1"
           }
         }
     http_version: 
-  recorded_at: Thu, 07 Aug 2014 21:54:15 GMT
+  recorded_at: Sun, 10 Aug 2014 21:18:53 GMT
 recorded_with: VCR 2.9.2

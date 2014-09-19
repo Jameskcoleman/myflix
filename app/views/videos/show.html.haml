@@ -15,14 +15,16 @@
 %section.reviews.container
   .row
     .col-sm-10.col-sm-offset-1
-      = form_for [@video, Review.new] do |f|
+      = bootstrap_form_for [@video, Review.new] do |f|
         %fieldset
+          .row
+            .col-sm-3
+              .form-group
+              = f.select :rating, options_for_video_reviews, {}, label: "Rate this video"
           .form-group
-            %label Rate this video
-            = f.select :rating, options_for_video_reviews
-          .form-group
-            %label Write Review
-            = f.text_area :content, rows: 6, class: "span6"
+            .row
+              .col-sm-8
+                = f.text_area :content, rows: 6, class: "span6", label: "Write Review"
         %fieldset.form-group.actions.clearfix
           %input(type="submit" value="Submit" class="btn")
           = link_to "Cancel", @video
