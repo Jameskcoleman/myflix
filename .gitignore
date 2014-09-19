@@ -15,3 +15,5 @@
 /tmp
 
 /config/application.yml
+
+/config/initializers/carrier_wave.rb

@@ -3,8 +3,8 @@ CarrierWave.configure do |config|
     config.storage = :fog
     config.fog_credentials = {
       :provider               => 'AWS',                        # required
-      :aws_access_key_id      => ENV['S3_KEY'],                       # required
-      :aws_secret_access_key  => ENV['S3_SECRET'],                    # required
+      :aws_access_key_id      => 'AKIAIB7XBE2XDOQMTSTA',                       # required
+      :aws_secret_access_key  => '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',                    # required
     }
     config.fog_directory  = 'myflix'                     # required
   else
