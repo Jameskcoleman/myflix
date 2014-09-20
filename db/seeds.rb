@@ -15,6 +15,7 @@ Category.create(name: "Comedy")
 Category.create(name: "Drama")
 
 boris = User.create(full_name: "Boris Smirnoff", password: "password", email: "boris@mail.com", admin: "1")
+angela = User.create(full_name: "Angela Rossi", password: "password", email: "angela@mail.com", admin: "1")
 
 Review.create(user: boris, video: family_guy, rating: 5, content: "This is a great show.")
 Review.create(user: boris, video: futurama, rating: 2, content: "This is a lousy show.")
